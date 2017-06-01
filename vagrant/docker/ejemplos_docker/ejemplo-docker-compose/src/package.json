@@ -1,0 +1,10 @@
+{
+"name": "ejemplo-node-express",
+"private": true,
+"version": "0.0.1",
+"description": "Ejemplo de node y express con docker",
+"author": "rubengomez78@gmail.com",
+"dependencies": {
+   "express": "4.12.0"
+  }
+}

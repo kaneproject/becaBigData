@@ -1,0 +1,18 @@
+express1:
+  build: .
+express2:
+  build: .
+express3:
+  build: .
+haproxy:
+  image: haproxy:alpine
+  volumes:
+    - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+  links:
+    - express1
+    - express2
+    - express3
+  ports:
+    - "80:80"
+  expose:
+    - "80"
