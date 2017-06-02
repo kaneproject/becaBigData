@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: baseclientwithribbon
+  profiles: default
+  cloud:
+    config:
+      enabled: true
+      uri: http://user:mipass@localhost:8888
+      failFast: true

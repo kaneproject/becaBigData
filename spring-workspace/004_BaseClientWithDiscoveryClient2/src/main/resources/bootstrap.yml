@@ -1,0 +1,11 @@
+server:
+  port: 8182
+spring:
+  application:
+    name: baseclientwithdiscovery
+  profiles: default
+  cloud:
+    config:
+      enabled: true
+      uri: http://user:mipass@localhost:8888
+      failFast: true

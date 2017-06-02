@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: baseclient
+  cloud:
+    config:
+      enabled: true
+      uri: http://user:mipass@localhost:8888
+      failFast: true
